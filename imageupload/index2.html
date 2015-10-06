@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+<script src="upload.js"></script>
+<script>
+
+
+</script>
+
+</head>
+<body ng-app="upApp" ng-controller="upController">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<h1>Image Uploading</h1>
+						<form role="form" name="user" >
+						  <div class="form-group">
+						   
+               
+						   <div class="button-green"><input class="file-upload"  type="file" name="file"    onchange=" angular.element(this).scope().uploadFile(this.files);"  />
+						    </div>
+						  </div>
+						  
+						 
+						</form>
+</div>
+<div  id="display"class="col-md-6">
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html> 
